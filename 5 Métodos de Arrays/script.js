@@ -33,3 +33,11 @@ console.log(Array.isArray($roupas)); // descobrindo se a variável é um  array
 // A diferença entre matrizes e objetos
 // Em JavaScript, os arrays usam índices numerados .  
 // Em JavaScript, os objetos usam índices nomeados .
+
+
+// 
+
+let $bolsa = ["caneta","lapís", "borracha","caderno"];
+console.log(Array.isArray($bolsa));
+
+console.log($bolsa.sort())

@@ -1,5 +1,100 @@
 "use strict"
 
+// SetTimeout ->   definir tempo limite 
+/*O método setTimeout () chama uma função ou avalia uma expressão após um número especificado de milissegundos.
+  A função com  setTimeout() vai ser executada depois do tempo  especificado 
+
+  ATRASO DE EXECUÇÃO
+  
+  Sintaxe: 
+      SetTimeout(função, milisegundos/minutos, parametro1, parametro2..)
+
+      setTimeout(função(parametros){
+        codigo
+      },tempo)
+
+      1 função necessária. A função que será executada
+      2 milissegundos Opcional. O número de milissegundos a aguardar antes de executar o código. Se omitido, o valor 0 é usado
+      3 parametros, ... Opcional. Parâmetros adicionais para passar para a função (não compatível com IE9 e anteriores)*/
+
+/* As funções especificadas não tem que  ser anônimas. Você pode dar o nome da função, e até mesmo definir ela em outro lugar e
+   passar uma referência para o timeout setTimeout() */
+
+
+/* EX 1 */
+function oláMundo(){
+  console.log("Ola Mundo")
+};
+
+let mostre = setTimeout(oláMundo,4000); /*  vai executar em 4 segundos */
+
+////////////////////////////////////////////////////////////////////////
+
+/* EX 2 */
+
+function  myFunction(){
+  let Var = setTimeout(mostre2,3000);
+}
+
+function mostre2(){
+  console.log("Ola mundo de novo")
+}
+
+let mostrar = myFunction()   /* vai executar 3 segundos */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* let mostre = setTimeout(function(){
+  alert("ola mundo")
+},3000); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* for(let x= 0; x <= 9 ; x++){
    setTimeout((x)=>{
        console.log(x)
@@ -21,10 +116,10 @@ for(let i = 0; i < array.length; i ++ ) {
 } */
 
 
-let arr = [1, 2, 3, 4,5];
+/* let arr = [1, 2, 3, 4,5];
 
 
 arr.forEach((num)=>setTimeout(function(){
     console.log(num)
 },1000 * num))
-
+ */

@@ -21,18 +21,101 @@
    passar uma referência para o timeout setTimeout() */
 
 
+// Passando parâmetros para uma função setTimeout()
+
+// Quaisquer parâmetros que você quiser passar para a função sendo executada dentro do setTimeout() devem
+// ser passados como parâmetros adicionais no final da lista.
+
+/* Sintaxe:
+      setTimeout(função(parametros){
+        codigo
+      },tempo) */
+
+// EX 2
+
+function falarAnimal(animal){
+  let falar ={
+    gato:"miar",
+    cachorro:"latir",
+    galinha:"piar",
+    leão: "rugir"
+  }
+  console.log(`O animal ${animal} vai ${falar[animal]}`)
+}
+
+function getRandom(arr){
+  return arr[Math.floor(Math.random()*arr.length)];
+}
+
+let animais = ["gato","cachorro","galinha","leão"]
+
+const animals = getRandom(animais);
+
+setTimeout(()=>{
+  falarAnimal(animals)
+},1000);
+
+
+
+
+/* function startSaudacao(nome){
+  console.log(`Olá ${nome}`);
+}
+let saudacao = setTimeout(startSaudacao,3000, "claudinei");
+ */
+////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* EX 1 */
-function oláMundo(){
+/* function oláMundo(){
   console.log("Ola Mundo")
 };
 
-let mostre = setTimeout(oláMundo,4000); /*  vai executar em 4 segundos */
+let mostre = setTimeout(oláMundo,4000); */ /*  vai executar em 4 segundos */
 
 ////////////////////////////////////////////////////////////////////////
 
 /* EX 2 */
 
-function  myFunction(){
+/* function  myFunction(){
   let Var = setTimeout(mostre2,3000);
 }
 
@@ -40,7 +123,7 @@ function mostre2(){
   console.log("Ola mundo de novo")
 }
 
-let mostrar = myFunction()   /* vai executar 3 segundos */
+let mostrar = myFunction() */   /* vai executar 3 segundos */
 
 
 
@@ -116,10 +199,10 @@ for(let i = 0; i < array.length; i ++ ) {
 } */
 
 
-/* let arr = [1, 2, 3, 4,5];
+/* let arr = [1, 2, 3, 4,5];*/
 
 
-arr.forEach((num)=>setTimeout(function(){
+/*arr.forEach((num)=>setTimeout(function(){
     console.log(num)
 },1000 * num))
  */

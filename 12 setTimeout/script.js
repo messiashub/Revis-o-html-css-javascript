@@ -42,7 +42,8 @@ function watch() {
   minutes = contagem(minutes);
   seconds = contagem(seconds);
 
-  document.getElementById('texto').innerHTML = `${horas} : ${minutes} : ${seconds}`;
+ document.getElementById('texto').innerHTML = `${horas} : ${minutes} : ${seconds}`;
+ 
   setTimeout(function() {watch()},1000);
  
 }

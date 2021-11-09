@@ -31,7 +31,55 @@
         codigo
       },tempo) */
 
-// EX 2
+window.onload = watch();
+
+function watch() {
+  let today = new Date();            // CAPTURANDO O OBJETO
+  let horas = today.getHours();      // CAPTURANDO O MÉTODO DO OBJETO
+  let minutes = today.getMinutes();  // CAPTURANDO O MÉTODO DO OBJETO
+  let seconds = today.getSeconds();  // CAPTURANDO O MÉTODO DO OBJETO
+    
+  minutes = contagem(minutes);
+  seconds = contagem(seconds);
+
+  document.getElementById('texto').innerHTML = `${horas} : ${minutes} : ${seconds}`;
+  setTimeout(function() {watch()},1000);
+ 
+}
+
+function contagem(i){
+  if(i < 10){
+    i = "0" + i;
+  }
+  return i;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // EX 2
 
 function falarAnimal(animal){
   let falar ={

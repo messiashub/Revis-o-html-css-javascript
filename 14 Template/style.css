@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* box-shadow: inset 0px 0px 0px 1px rgba(221, 218, 218, 0.1); */
+   /*  box-shadow: inset 0px 0px 0px 1px rgba(248, 104, 104, 0.219); */
 }
 /* Links_______ */
 a{
@@ -23,7 +23,7 @@ header{
     background-color: var(--cinza);
 }
 .container-top{
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     padding-bottom: 20px;
     justify-content: space-around;
@@ -74,7 +74,7 @@ header{
     margin-left: 1rem;
 }
 .nav{ 
-    padding:10px;
+    padding:20px;
     background-color:black;
 
 }
@@ -92,39 +92,46 @@ header{
 nav li a:hover{
     color: orange;
 }
-/* Carrosel */
+/* Carrosel-________________ */
 .carrosel{
     display: flex;   
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
+    /* flex-direction: column; */
+    
+    
+    
 }
 .carrosel.title{
     display: flex;
-    margin-top: 30px;
+    margin:30px 0px 0px 0px;
     padding: 20px 20px 30px 20px;
-    width: 35%;
+    width: 450px;
+    height: 350px;
     flex-direction: column;
     background-color:rgb(77, 74, 74)
 }
 .carrosel.carrosel.title{
-    color: var(--esmalt)
+    color: var(--esmalt);
 }
 .carrosel.title h1{
-    font-size:2.5rem;
+    font-size:3rem;
     font-style: italic;
     font-weight: 200;
     padding-bottom: 20px;
 }
-.carrosel.title p{
+.carrosel.title p{  
     font-size: 0.9rem;
+    line-height: 1.5rem;
     padding-bottom: 20px;
 }
 .carrosel.title span{
    display: flex;
    justify-content:end;
+
 }
 .carrosel.title span a{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 .carrosel.foto{
     display: flex;
@@ -132,10 +139,141 @@ nav li a:hover{
     align-items: center;
     color: white;
     font-size: 3rem;
-    height:300px;
-
+    width:100%;
+    height:350px;
     margin-top: 30px;
     background-color: var(--cinza);
+}
 
+/* galery_______________ */
+.galery{
+    display: flex; 
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 70%;
+}
+.galery.texto{
+    display: flex;
+    flex-direction: column;
+}
+.galery.texto h2{
+    font-style: italic;
+    font-weight:200 ;
+    color: var(--esmalt);
+    margin-bottom: 20px;
+}
+.galery.texto p{
+    color: var(--esmalt);
+}
+.galery.texto p:first-of-type{
+    padding-bottom: 20px
 
+}
+.galery.fotos{
+    display: flex;
+    /* justify-content: center;*/
+    flex-direction: column;
+  /*   align-items: center; */ 
+}
+.galery-container{
+   display: flex;
+   justify-content:flex-end;
+   margin-bottom: 20px;
+   /*   margin-bottom: 20px; */
+   
+}
+.galery-fotos{
+    border: 1px solid var(--esmalt);
+    width:200px;
+    height:200px;
+    margin-left: 50px;
+}
+.galery-texto{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+}
+
+.linha{
+
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;   
+    width: 70%;
+}
+
+/* container_________ */
+.container{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+.blog{
+    width: 350px;
+}
+.blog h3{
+    font-size: 1.3rem;
+    color: var(--esmalt);
+    font-style: italic;
+    line-height: 2rem;
+}
+.blog p:first-of-type{
+    font-style: italic;
+    font-weight: bold;
+    color: var(--esmalt);
+    line-height:2rem
+}
+.blog p span{
+    font-size: 0.9rem;
+    color: var(--esmalt);
+}
+.blog p{
+    line-height: 1.4rem;
+    color: var(--esmalt);
+}
+
+.links{
+    width: 350px;
+}
+.links h3{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--esmalt);
+    font-style: italic;
+}
+.links p{
+    line-height:2.6rem
+}
+.about{
+   /*  width: 370px; */
+    
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items:center */
+}
+.about .title h3{
+    /* margin-bottom: 20px; */
+    font-size: 1.3rem;
+    color: var(--esmalt);
+    font-style: italic;
+    line-height: 2rem;
+}
+.about .wrapper{
+    margin-top: 40px;
+    width:150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.container-texto{
+    
+    
+}
+.container-texto p{
+   
+    color: var(--esmalt);
+    line-height:1.5rem;
+}
+.container-texto a{
+   
 }

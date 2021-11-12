@@ -267,14 +267,7 @@ nav li a:hover{
     width: 80%;
 }
 
-.about{
-   /*  width: 370px; */
-    
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items:center */
-}
+
 
 .about .title h3{
     line-height: 2rem;

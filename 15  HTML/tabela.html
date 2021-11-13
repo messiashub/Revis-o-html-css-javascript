@@ -5,44 +5,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Claudinei Messias"> <!-- define o autor da página -->
+    <meta name="description" content="Um web site para iniciantes"> <!-- vai  mostrar esse texto nas buscas do google -->
+    
     <title>Tabela</title>
+    
 </head>
 
 <body>
 
     <!--  TABELA BÁSICA -->
-    <table>
+    <!-- <table>
         <caption>Pessoas Conhecidas</caption>
-        <thead> <!-- Cabeçalho -->
+        <thead> 
             <tr>
-                <!-- linha -->
-                <th>Nome</th> <!-- celula do cabeçalho -->
+                
+                <th>Nome</th> 
                 <th>Idade</th>
                 <th>Endereço</th>
             </tr>
         </thead>
 
-        <tbody> <!-- Corpo da tabela -->
+        <tbody> 
             <tr>
-                <td>claudinei</td> <!-- célula da tabela -->
+                <td>claudinei</td> 
                 <td>48</td>
                 <td>Rua:Hibisco</td>
             </tr>
             <tr>
-                <td>Mario</td> <!-- célula da tabela -->
+                <td>Mario</td> 
                 <td>49</td>
                 <td>Rua:Elza dos Anjos</td>
             </tr>
         </tbody>
 
-        <tfoot> <!-- Rodapé -->
+        <tfoot> 
             <tr>
                 <td>Total:</td>
                 <td>2 pessoas</td>
             </tr>
         </tfoot>
-    </table>
+    </table> -->
 
+<!-- 
+    TABELA COMPLEXA
+
+    2 Lojas
+        Quantos produtos foram produzidos, quantos vendidos
+        e agrupado por nome dos produtos
+ -->
+    
+<table>
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+    <colgroup> <!-- Grupo de Colunas -->
+        <col style="background-color: rgb(24, 134, 42);">
+        <col span="2" style="background-color: red;"> <!-- vai pegar duas colunas -->
+        <col span="2" style="background-color: blue">
+    </colgroup>
+
+    <thead> <!-- Cabeçalho -->
+        <tr>
+            <th rowspan="2"></th>     <!-- vai pegar duas linhas -->
+            <th colspan="2" scope="colgroup">Afonso Pena</th>   <!-- scopo no grupo vai pegar duas colunas -->
+            <th colspan="2" scope="colgroup">Antônia Pereira</th>  <!-- scopo no grupo vai pegar duas colunas -->
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th> <!-- scopo na coluna -->
+            <th scope="col">Vendidos</th>   <!-- scopo na coluna -->
+            <th scope="col">Produzidos</th> <!-- scopo na coluna -->
+            <th scope="col">Vendidos</th>   <!-- scopo na coluna -->
+        </tr>
+    </thead>
+    <tbody> <!-- Corpo da Tabela -->
+
+        <tr> <!-- linha -->
+            <th scope="row">Vassouras</th> <!-- scopo na linha -->
+            <td>50</td>
+            <td>30</td>
+            <td>20</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Blades</th> <!-- scopo na linha -->
+            <td>10</td>
+            <td>10</td>
+            <td>30</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+
+</table>
 
 
 

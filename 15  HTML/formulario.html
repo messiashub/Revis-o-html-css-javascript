@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <!-- 
+        <form>
+            - Elemento que definirá um formulario
+            - É um container estilo, <section> <footer>
+
+        Atributos básicos
+        - action
+        - method
+     -->
+
+    <!--  <form action="" method=""> -->
+
+    <!-- </form> -->
+
+
+    <!-- 
+        <fieldset>
+        - agrupamento de campos
+        - mesmo propósito
+        - semântico
+        - acessibilidade
+
+        Atributos especiais
+
+        - disable
+            - desabilita todos os elementos internnos
+            - não serão enviados ao submeter o formulário
+
+        - form
+            - o id de um formulário ao qual esse fieldset pertence
+            - não precisa estar dentro do formulário
+
+        - Name
+            - nome do grupo
+
+        <legend>
+        - nome do agrupamento
+        - primeiro elemento dentro do fieldset
+
+    -->
+
+    <!-- 
+        <label>
+
+        - associar e indentificar uma (ou mais) tag de entrada de dados
+        - acessibilidade
+
+        Atributos
+
+        - for 
+            - para fazer a conexão entre label e a tag  de entrada de dados
+            - é feita via id do input
+            - só funciona com elementos específicos
+                - button, input (not hidden), meter, output, progress, select, textarea
+
+     -->
+    <!-- <label>Nome Completo:
+        <input type="text">
+    </label>
+
+    <br><br>
+
+    <label for="endereco">Endereço:</label> 
+    <input id="endereco" type="text"> -->
+
+    <!--  <form action="">
+        <fieldset>
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="text">
+        </fieldset>
+    </form> -->
+
+
+    <!-- 
+        <button>
+
+        - Representa um botão 
+        - Usado para enviar formulários
+        - É estilizado pelo user agent
+
+        Atributos comuns
+
+        - type
+            - submit
+            - reset
+            - button
+        - autofocus
+        - disabled
+        - name
+        - value
+        - form
+
+     -->
+    <!--  <form action="">
+        <input type="text" value="digite aqui">
+        <button type="reset">Limpar</button> 
+    </form>
+
+    <br>
+    <form action="" id="esteform"></form> 
+    <button type="submit" form="esteform">Enviar</button> -->
+
+
+    <!-- 
+    # <datalist>
+
+    - Lista de valores como sugestão a uma tag <input>.
+    - valores sugestivos e não obrigatórios
+    - Usuarios poderão selecionar um dos valores, ou colocar um valor diferente da sujestão
+
+    Exemplo de como usar:
+
+    <datalist id="frutasdata">
+        <option>maçã</option>
+        <option>banana</option>
+        <option>laranja</option>
+        <option>limão</option>
+        <option>morango</option>
+    </datalist>
+
+    # list
+
+    - Recebe como valor o id de um <datalist> residente no mesmo documento.
+
+    # Tipos de input suportados
+
+    - text, search, url, tel, email, date, month, week, time,
+    datatime-local, number, range e color.
+
+    * Valores de datalist que não são compatíveis com o tipo do <input>
+    não serão apresentados.
+
+    # Tipos de input não suportados (conforme especificação)
+    
+    - hidden, password, checbox, radio, file, ou qualquer tipo de button
+
+    # User Agent
+
+    verificar a compatibilidade com browser https://caniuse.com
+ -->
+
+
+    <!-- <input type="text" list="frutasdata" placeholder="Escolha uma fruta">
+    <datalist id="frutasdata">
+        <option>maçã</option>
+        <option>banana</option>
+        <option>laranja</option>
+        <option>limão</option>
+        <option>morango</option>
+    </datalist>
+ -->
+
+<!-- 
+    
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

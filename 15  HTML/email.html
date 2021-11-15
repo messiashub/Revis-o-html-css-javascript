@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+</head>
+<body>
+    <!-- 
+        <input type="email" />
+
+        -Espera que o usuário digite um email para
+        -Irá validar se o valor digitado é um email 
+
+        # Atributos 
+
+        - placeholder
+        - readonly / disabled
+        - value 
+
+        - required
+
+        - multiple
+            * O campo irá receber 1 ou mais emails, separado por vírgulas
+
+        - minlenght / maxlength
+            * O mínimo e/ou máximo valor que o campo irá conter
+        
+        - size 
+            * Valor numérico inidicando quantos caracteres esse
+        
+        - pattern
+            * Uso de expressão regular para validar o campo 
+            * exemplo: o usuário só poderá colocar email do domínio
+            rocketseat.com.br 
+                * pattern=".+@rocketseat\.com\.br"
+
+        -list
+            * o id de uma tag <datalist> que está no mesmo documento
+            * <datalist> irá conter uma lista de valores pré definidos
+            a fim de sugerir ao usuário, quais valores estão disponíveis
+                * Os valores do <datalist> que não forem compatíveis com
+                o campo, não serão apresentados como sugestão
+
+     -->
+
+    <!-- <form action="">
+        <input type="email"
+        placeholder="Email" 
+        required
+        multiple
+        size="8">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br><br> -->
+    <!-- pattern
+            * Uso de expressão regular para validar o campo 
+            * exemplo: o usuário só poderá colocar email do domínio
+            rocketseat.com.br 
+                * pattern=".+@rocketseat\.com\.br" -->
+
+    <!-- <form action="">
+        <input type="email"pattern=".+@rocketseat\.com\.br"
+        title="Somente emails rocketseat.com.br serão aceitos">
+        <button type="submit">Enviar</button>
+    </form> -->
+
+
+    <!-- ---------------------------------------------------------- -->
+
+    <!-- 
+        <input type="url"/>
+
+        -Espera que o usuário digite uma url
+        -Irá validar se o valor digitado é uma url 
+
+        # Atributos 
+
+        - placeholder
+        - readonly / disabled
+        - value 
+
+        - required
+
+        - minlenght / maxlength
+            * O mínimo e/ou máximo valor que o campo irá conter
+        
+        - size 
+            * Valor numérico inidicando quantos caracteres esse campo deve conter,
+              modificando o tamanho do campo
+
+        - pattern
+            * Uso de expressão regular para validar o campo 
+            * exemplo: o usuário só poderá colocar domínio.com.br
+            rocketseat.com.br 
+                * pattern=".*\.com\.br\/.* "
+
+        - list
+            * o id de uma tag <datalist> que está no mesmo documento
+            * <datalist> irá conter uma lista de valores pré definidos
+            a fim de sugerir ao usuário, quais valores estão disponíveis
+                * Os valores do <datalist> que não forem compatíveis com
+                o campo, não serão apresentados como sugestão
+
+        - spellcheck
+            * Habilitar a verificação ortográfica  para este input
+ -->
+    <!-- <form action="">
+        <input type="url"
+        placeholder="http://exemple.com.br"
+        required
+        pattern=".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos">
+        
+        <button type="submit">Enviar</button>
+    </form>
+ -->
+
+
+
+
+
+<!-- 
+    <input type="file"/>
+
+    - Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
+
+    # Atributos 
+
+    - value
+        - contém o arquivo a ser enviado
+
+    - accept
+        - decreve que tipos de arquivos serão aceitos 
+        - exemplo: .doc, .docx, .pdf, audio/*, image/png, .png
+
+    - files
+        - a lista de arquivo ou arquivos
+
+    - multiple 
+        - permite o envio de múltiplos arquivos
+
+    # Envio dos arquivos
+    Para envio dos arquivos o formulário deverá utilizar o método POST e o atributo enctype como
+    "multipart/form-data"
+
+
+ -->
+ <!-- tem que  ter essa estrutura para o input do tipo "file" -->
+ <!-- <form action=""method="post" enctype="multipart/form-data">
+     <input type="file"accept="image/*"> 
+ </form> -->
+
+
+<!-- 
+
+    <input type="color"/>
+
+    - Interface para selecionar cor
+    - Color picker
+
+    # Atributos
+    - value:RGB
+        - Se inválido, o preto será exibido
+
+    - list
+        * o id de uma tag <datalist> que está no mesmo documento
+        * <datalist> irá conter uma lista de valores pré definidos a
+            fim de sugerir ao usuário, quais valores estão disponíveis
+        * Os valores do <datalist> que não forem compatíveis com
+            o campo, não serão apresentados como sugestão
+ -->
+ 
+<!-- <input type="color" name="" id="">
+<br><br>
+
+<input type="color"value="#00ff00">
+<br><br>
+
+<datalist id="colordata">
+    <option>#0000ff</option>
+    <option>#00ff00</option>
+    <option>#0000fa</option>
+</datalist>
+<input type="color" list="colordata">
+ -->
+
+
+<!-- 
+    <input type="checkbox"/>
+
+    - Caixas que podem ser marcadas
+    - Selecionar um valor para ser enviado
+    - Se não selecionado, não será enviado nenhum dado
+
+    ATRIBUTOS
+    - globais
+    - value
+        * valor que aquele campo contém
+        * se não estiver presente, o padrão é "on"
+    - checked
+        * para deixar o campo marcado por padrão
+
+ -->
+ <!-- <label for="subscribe">Receber notificações</label>
+ <input type="checkbox" name="subscribe"id="subscribe">
+ <br><br> -->
+ <!-- ------------------------------------------------------- -->
+
+ <!-- MARCAR MULTIPLOS VALORES
+        - Usaremos o atributo "name" com o mesmo nome  para os
+        diversos campos -->
+
+<!-- <fieldset>
+    <legend>Escolha seu interesse</legend>
+    <div>
+        <input type="checkbox" name="interest" id="coding" value="coding" checked>
+        <label for="coding">Coding</label>
+    </div>
+    <div>
+        <input type="checkbox" name="interest" id="music" value="music" checked>
+        <label for="music">Music</label>
+    </div>
+</fieldset> -->
+
+
+    <!-- 
+        <input type="hidden" id="timestamp" name="timestamp" value="1286705410">
+
+
+        - invisível ao usuário
+        - será enviado com o formulário
+        - não receberá foco
+        - leitores de tela não precebem esse campo
+     -->
+
+   <!--  <input type="hidden" value="8" name="id"> -->
+
+<!-- 
+    <input type="radio">
+
+    - Projetado para selecionar uma única opção de um grupo de opções
+
+    ATRIBUTOS ESSENCIAIS
+
+    - checked
+        indica que o campo foi marcado
+    - value
+        valor que aquele campo contém
+ -->
+<fieldset>
+    <legend>Bora tomar um café?</legend>
+    <label for="yes">Sim</label>
+    <input type="radio" id="yes" name="coffee" value="yes">
+
+    <label for="nao">Não</label>
+    <input type="radio" id="nao" name="coffee" value="no">
+ 
+</fieldset>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
 </head>
+
 <body>
     <!-- 
         <input type="email" />
@@ -122,7 +124,7 @@
 
 
 
-<!-- 
+    <!-- 
     <input type="file"/>
 
     - Usuário poderá escolher 1 ou mais arquivos para enviar no formulário
@@ -148,13 +150,13 @@
 
 
  -->
- <!-- tem que  ter essa estrutura para o input do tipo "file" -->
- <!-- <form action=""method="post" enctype="multipart/form-data">
+    <!-- tem que  ter essa estrutura para o input do tipo "file" -->
+    <!-- <form action=""method="post" enctype="multipart/form-data">
      <input type="file"accept="image/*"> 
  </form> -->
 
 
-<!-- 
+    <!-- 
 
     <input type="color"/>
 
@@ -172,8 +174,8 @@
         * Os valores do <datalist> que não forem compatíveis com
             o campo, não serão apresentados como sugestão
  -->
- 
-<!-- <input type="color" name="" id="">
+
+    <!-- <input type="color" name="" id="">
 <br><br>
 
 <input type="color"value="#00ff00">
@@ -188,7 +190,7 @@
  -->
 
 
-<!-- 
+    <!-- 
     <input type="checkbox"/>
 
     - Caixas que podem ser marcadas
@@ -204,16 +206,16 @@
         * para deixar o campo marcado por padrão
 
  -->
- <!-- <label for="subscribe">Receber notificações</label>
+    <!-- <label for="subscribe">Receber notificações</label>
  <input type="checkbox" name="subscribe"id="subscribe">
  <br><br> -->
- <!-- ------------------------------------------------------- -->
+    <!-- ------------------------------------------------------- -->
 
- <!-- MARCAR MULTIPLOS VALORES
+    <!-- MARCAR MULTIPLOS VALORES
         - Usaremos o atributo "name" com o mesmo nome  para os
         diversos campos -->
 
-<!-- <fieldset>
+    <!-- <fieldset>
     <legend>Escolha seu interesse</legend>
     <div>
         <input type="checkbox" name="interest" id="coding" value="coding" checked>
@@ -236,9 +238,9 @@
         - leitores de tela não precebem esse campo
      -->
 
-   <!--  <input type="hidden" value="8" name="id"> -->
+    <!--  <input type="hidden" value="8" name="id"> -->
 
-<!-- 
+    <!-- 
     <input type="radio">
 
     - Projetado para selecionar uma única opção de um grupo de opções
@@ -250,7 +252,7 @@
     - value
         valor que aquele campo contém
  -->
-<fieldset>
+    <!-- <fieldset>
     <legend>Bora tomar um café?</legend>
     <label for="yes">Sim</label>
     <input type="radio" id="yes" name="coffee" value="yes">
@@ -258,7 +260,193 @@
     <label for="nao">Não</label>
     <input type="radio" id="nao" name="coffee" value="no">
  
-</fieldset>
+</fieldset> -->
+
+    <!-- 
+    <select>
+
+    - Controle que fornece um menu de opções
+
+    <option>
+
+    - Contém as opções a serem selecionados
+    - Atributos necessários
+        -value
+
+    ATRIBUTOS ÚNICOS
+    - multiple 
+        Habilita múltiplas opções 
+    - size
+        Quando opções visíveis
+ -->
+
+    <!-- <label for="carselect">Qual modelo do carro</label>
+<select name="carmodel" id="carselect" multiple >
+    <option value="">Selecione o modelo</option> 
+    <option value="fiat">Uno</option>
+    <option value="audi">A3</option>
+    <option value="chevrolet">Corsa</option>
+    <option value="volkswagem">variant</option>
+</select> -->
+
+    <!-- 
+    Optgroup
+ -->
+
+    <!-- <label>Por favor escolha um dos pets</label>
+    <select name="pets" id="" multiple>
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+        </optgroup>
+    </select> -->
+
+    <!-- 
+    <input type="search"/>
+
+    - Para campos de busca
+    - É igual ao campo do tipo "text" mas poderá ser um pouco diferente
+    dependendo do user agent
+
+    # Atributos
+
+    - list / <datalist> 
+    - pattern
+    - aria-label
+ -->
+    <!-- <datalist id="termosDeBuscas">
+    <option>Mac</option>
+    <option>Windows</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    <input type="search" name="q" list="termosDeBuscas"
+    placeholder="Digite seu termo de busca" size="24"
+    aria-label="Campo de pesquisa: Digite seu termo de busca">
+
+    <button>Pesquisar</button>
+
+</form>
+
+<br><br>
+
+<form action="">
+    <label for="">Pesquisar pelo ID</label>
+    <input type="search" name="id" size="5"
+    pattern="[0-9]{2}"  
+    title="Digite o número do ID: 99">
+    <button>Pesquisar</button>
+</form> -->
+
+
+    <!-- 
+    <input type="number"/>
+
+    - Entrada de números
+
+    # Atributos
+    - min/max
+    - step
+
+ -->
+
+    <!-- <form action="">
+    <input type="number" min="2" max="10">
+    <button>Enviar</button>
+</form>
+
+<br><br>
+
+<datalist id="numeroslist">
+    <option>100</option>
+</datalist>
+
+<form action="">
+    <input type="number" list="numeroslist" step="2">
+    <button>Enviar</button>
+</form> -->
+
+
+    <!-- 
+    <input type="range"/>
+
+    - Controle para selecionar um valor numérico
+    - Slider ou dial control
+
+    # Atributos
+
+    - min/max
+    - step
+ -->
+
+    <!-- <input type="range"min="1" max="100" value="50" step="5" >
+ -->
+
+    <!-- 
+    Outros campos interessantes
+    (mas que ainda não tem um ótimo suporte)
+ -->
+
+    <!-- <input type="date">
+<br><br>
+<input type="datetime-local" name="" id="">
+ -->
+
+    <!-- 
+    Crie um formulário de Contato
+
+    1.[x] O formulário deverá conter um título de nome Contato.
+       Usar fieldset e legend para essa finalidade.
+
+    2. O formulário conterá 3 campos
+        -[x] nome (input texto)
+        -[x] email (input email)
+        -[x] mensagem (textarea)
+
+    3. O formulário deverá conter um botão para Enviar
+
+    Atenção: O formulário deverá conter regras de acessibilidade,
+    como o label para cada campo, por exemplo.
+ -->
+    <form action="">
+        <fieldset>
+            <legend>Contato</legend> <br>
+            <label for="name">Nome</label> <br>
+            
+            <input id="name" type="text" name="name" placeholder="Seu nome">
+            <br><br>
+
+            <label for="email">Email</label> <br>
+            <input  id="email"type="email" name="email" placeholder="Seu E-mail">
+            <br><br>
+
+            <label for="mensagem">Mensagem</label><br>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -267,4 +455,5 @@
 
 
 </body>
+
 </html>

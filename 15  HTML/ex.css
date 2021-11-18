@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 38, 0, 0.445);
+}
+
+header{
+    background-color:rgb(233, 231, 231);
+    
+}
+.header{
+    display:flex;
+    width: 700px;
+    min-width: calc(100% - 700px);
+    height:5rem;
+
+    margin: 0 auto;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header .logo a{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.nav ul li{
+    color: rgba(0, 0, 0, 0.431);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    top: 0;
+    width: 700px;
+    margin: 0 auto;
+    min-width: calc(100% - 700px);
+   
+    justify-content:flex-start;
+    height:100vh;
+}
+main .carrosel{
+    /* display: flex; */
+    width:100%;  
+   /*  height:50vh; */
+}
+.carrosel img{
+    display: flex;
+    width:100%;
+   /*  min-width: 50px; */
+  /*   min-width: 50px; */
+    /* min-width: 100px; */
+   /*  height:50vh ; */
+   
+
+}
+.sobre{
+    display: flex;
+}
+.sobre .sobre-texto{
+    width: 70%;
+}

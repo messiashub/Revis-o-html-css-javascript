@@ -1,0 +1,34 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 0px 2px rgba(0,0,255, 0.1);
+}
+ul{list-style: none;}
+a{text-decoration: none;}
+img{max-width:100%;}
+
+.container{
+    margin: 0 auto;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 65% 35%; /* duas colunas */
+    grid-template-areas:            /* areas do template */
+        "header header"
+        "main aside"
+        ;
+}
+
+header{
+    grid-area: header;
+    height: 200px;
+}
+main{
+    grid-area: main;
+    height: 200px;
+}
+aside{
+    grid-area: aside;
+    height: 200px;
+    margin-left: 10px;
+}

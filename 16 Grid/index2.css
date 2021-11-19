@@ -1,8 +1,12 @@
+:root{
+    --marron:#4E3727;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1)
+    font-family:'Montserrat', sans-serif; 
+    /* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1) */
 }
 .container{
     margin: 0 auto;
@@ -16,7 +20,7 @@
 main{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 300px 1.5fr;
+    grid-template-rows: 1fr 300px 1.8fr;
 }
 .linha-1{
     grid-row: span 1;
@@ -40,16 +44,18 @@ main{
     align-items: center;
 }
 .header .logo h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    font-weight:lighter;
 }
 
 .header .nav ul{
     display: flex;
     list-style: none;
     gap: 2rem;
+    color: gray;
 }
 .nav ul li{
-    font-size:1.2rem  
+    font-size:14px;  
 } 
 /* carrosel_____________________ */
 .image-carrosel .car{
@@ -66,25 +72,39 @@ main{
     padding: 5px 15px 0px 0px;
 }
 .sobre .sobre-texto h2{
+    color: var(--marron);
+    font-weight: lighter;
     margin:20px 0px 20px 0px;
 }
 .sobre .sobre-texto p{
+    font-size: 0.9rem;
     margin: 20px 0px 20px 0px;
+    letter-spacing: .1px
 }
 .sobre .sobre-contato{
     width: 100%;
-    height:160px;
+    height:186px;
     margin: 20px 0px 20px 0px;
     border: 1px solid black;
-    background-color: #4E3727;
+    background-color:var(--marron);
     padding: 10px;
    /*  max-width: 500px; */ 
+}
+.sobre-contato p{
+    font-weight: 700;
 }
 .sobre-contato p,span{
     color: white;
 }
+.sobre-contato button{
+    border: none;
+    border-radius: 20px;
+    padding: 13px;
+    box-shadow:1px 4px 1px black;
+}
  
 /*Negócio_____________ */
+
 .galeria{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
@@ -95,27 +115,48 @@ main{
 .l-2{
     grid-row: span 2;
 }
+.negocio .negocio-texto h2{
+    color: var(--marron);
+    font-weight: lighter;
+}
 .negocio-foto{
     position: relative;
+}
+.negocio-foto p{
+    font-size: 0.9rem;
+    color: gray;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+    margin-bottom: 20px;
 }
 .negocio-foto span{
     position: absolute;
     background-color: #1a191954;
     color: rgb(245, 238, 238);
+    font-size: 1.5rem;
     left: 0px;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 .negocio-foto .foto{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+.negocio-foto button{
+    border: none;
+    border-radius: 20px;
+    padding: 13px;
+    box-shadow:1px 4px 1px black;
+}
+
 
 /*footer_______________________*/
 
 footer{
-    background-color:#4E3727
+    
+    background-color:#4E3727;
+    
 }
 .footer{
     margin: 0 auto;

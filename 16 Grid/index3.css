@@ -3,7 +3,7 @@
     padding:0;
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
-   /*  box-shadow: inset 0px 0px 0px 1px rgba(0,0,255, 0.1); */
+    box-shadow: inset 0px 0px 0px 1px rgba(0,0,255, 0.1);
 }
 ul{list-style: none;}
 a{text-decoration: none;}
@@ -32,7 +32,7 @@ img{max-width:100%;}
         grid-template-columns: 10% 30% 45% 10%;
         grid-template-areas: 
             "button logo search nav-rigth"
-            "nav nav nav nav"
+            "nav . . ."
             "main main main main"
             ; 
         align-items: center; 
@@ -70,12 +70,10 @@ img{max-width:100%;}
     .nav-rigth{
         grid-area: nav-rigth;
         display: flex;
-       /*  align-items: center;   */
     }
     .nav-rigth ul{
         display: block;
         gap: 10px;
-    
     }
 
     nav{
@@ -85,12 +83,14 @@ img{max-width:100%;}
     }
     nav ul li{
         display: inline-block;
+       
         font-weight: bold;
         font-size: 17px;
         margin: 0 10px;
     }
     .button{
         grid-area: button;
+        display: block !important;
     }
     .ads{
         display: none;
@@ -234,6 +234,9 @@ img{max-width:100%;}
         margin-right: -4px;
         border-radius: 0px 5px 5px 0px;
     }
+   /*  .button{
+       display: none;
+    } */
     .nav-rigth{
         grid-area: nav-rigth;
         display: flex;
@@ -246,8 +249,10 @@ img{max-width:100%;}
     }
 
     nav{
+        display: block !important;
         grid-area: nav;
         margin: 10px 0px 10px 0px ;
+      
     }
     nav ul li{
         display: inline-block;
@@ -318,24 +323,15 @@ img{max-width:100%;}
         line-height: 1.5rem;
     }
 
-
-
-
-
     aside{
         grid-area: aside;
         margin-left: 50px;
-        text-align: center;
-       
-        
+        text-align: center;    
         
     }
     .subjects{
-       
         margin-top: 10px;
         text-align: center;
-        
-        
     } 
     .subjects ol{
         column-count: 2;

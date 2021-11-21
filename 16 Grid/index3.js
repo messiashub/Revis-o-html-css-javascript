@@ -1,13 +1,16 @@
-let btn = document.querySelector(".button")
+let btn = document.querySelector(".button");
+let nav =document.querySelector(".open");
 btn.addEventListener("click",function(){
     if(this.dataset.action == "close"){
-        alert('fechou');
+        /* alert('fechou'); */
         this.removeAttribute("data-action");
-        
+        nav.style.display = "none";
 
     }else{
-        alert('abriu');
+       /*  alert('abriu'); */
         this.dataset.action="close";
+
+        nav.style.display = "block";
     }
 
 })

@@ -30,9 +30,9 @@ body{
     .container{
         
         display: grid;
-       /*  grid-template-columns:530px 15% 1fr 530px; */
-        grid-template-columns: calc(50vw - 530px) 15% 1fr calc(50vw - 530px);
-        
+        grid-template-columns:530px 15% 1fr 530px;
+       /*  grid-template-columns: calc(50vw - 530px) 15% 1fr calc(50vw - 530px);
+         */
         margin: 0 auto;
         grid-template-areas: 
             "... header header ..."

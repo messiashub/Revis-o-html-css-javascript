@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1);
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: #F7F7F7;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+p strong {
+    color:rgb(240, 80, 17);
+    
+}
+
+/*  */
+@media screen and (min-width: 1200px){
+
+    .container {
+        display: grid;
+       /*  grid-template-columns: repeat(4, 1fr); */
+       grid-template-columns: calc(50vw - 530px) 1fr 1fr calc(50vw - 530px);
+
+        grid-template-areas:
+            "header header header header"
+            "main main main main"
+            "footer footer footer footer";
+        }
+        /* HEADER________________________________________ */
+        header {
+        grid-area: header;
+        height: 110px;
+        padding: 10px 50px;
+        display: grid;
+        grid-template-columns: 600px 1fr;
+        grid-template-areas: "logo nav"
+        ;
+        justify-content:center;
+        align-items: center;
+
+        }
+        .logo {
+        grid-area: logo;
+        /* width: 300px; */
+        display: grid;
+        grid-template-columns: 150px 200px;
+        justify-content:start;
+        align-items: center;
+        }
+        .nav {
+        grid-area: nav;  
+        }
+
+        .nav ul{
+            display: flex;
+            justify-content:flex-end;
+        }
+        .nav ul li{
+        padding: 10px;
+        }
+        /* main________________________________________ */
+        main {
+        grid-area: main;
+
+        display: grid;
+        grid-template-columns:calc(50vw - 530px) 1fr 1fr calc(50vw - 530px);
+        grid-template-areas: 
+            "carrosel carrosel carrosel carrosel"
+            "... sobre sobre ..."
+            "... services services ..."
+            "parallax parallax parallax parallax"
+            "... galery galery..."
+            "map map map map"
+        }
+
+        .carrosel{
+            grid-area: carrosel;
+        }
+        .sobre{
+            grid-area: sobre;
+            display: grid;
+            grid-template-columns:repeat(2, 1fr);
+            grid-template-areas: 
+            "sobre-image sobre-text"
+            ;
+            margin: 40px 0;
+            grid-template-rows: 300px;
+        }
+
+
+        .sobre-image{
+            grid-area:sobre-image;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            
+            
+        }
+        .wrapper-image{
+            width: 300px;
+            height: 200px;
+            display: inline-block;
+            margin: 0 auto;
+            
+        }
+        .sobre-text{
+            grid-area:sobre-text;
+        }
+        /* services_______________________ */
+        .services{
+            grid-area: services;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas:
+                "title-service ..."
+                "wrapper-services wrapper-services";
+        }
+
+        .title-service{
+            grid-area: title-service;
+            
+           
+            
+        }
+
+        .wrapper-services{
+            grid-area: wrapper-services;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content:center; 
+            /* align-items: center; */
+
+            margin: 40px 0;
+        }
+        .serigraphy{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+            
+            
+        }
+
+        /* .services {
+            grid-area: services;
+        } */
+
+        .parallax {
+            grid-area: parallax;
+        }
+        .galery{
+            margin: 40px 0;
+            grid-area: galery;
+            display: grid;
+
+        }
+        .galery-image img{
+            width: 100%;
+           height: 100%;
+           object-fit: cover;
+        }
+        .galery-image{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 300px 300px;
+            gap:10px
+        }
+        .map {
+            grid-area: map;
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* footer_______________________________________ */
+        footer {
+        grid-area: footer;
+        }
+   
+}

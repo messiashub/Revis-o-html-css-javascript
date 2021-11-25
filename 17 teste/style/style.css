@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1);
+  /* box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1); */
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: italic;
+    height:100%;
+    font-family: 'Roboto', sans-serif;
+   
     background-color: #F7F7F7;
 }
 
@@ -40,16 +41,22 @@ p strong {
         /* HEADER________________________________________ */
         header {
         grid-area: header;
+        width: 100%;
         height: 110px;
         padding: 10px 50px;
         display: grid;
         grid-template-columns: 600px 1fr;
         grid-template-areas: "logo nav"
         ;
+        background-image: linear-gradient(to right,#9E1830, #EB3A59, #EBE352);
         justify-content:center;
         align-items: center;
-
+        position: fixed; 
+        box-shadow: 1px 2px 4px rgba(78, 77, 77, 0.63); 
+       
         }
+
+       
         .logo {
         grid-area: logo;
         /* width: 300px; */
@@ -57,6 +64,7 @@ p strong {
         grid-template-columns: 150px 200px;
         justify-content:start;
         align-items: center;
+        
         }
         .nav {
         grid-area: nav;  
@@ -67,7 +75,12 @@ p strong {
             justify-content:flex-end;
         }
         .nav ul li{
+        font-weight: bold;
         padding: 10px;
+        }
+        .nav ul li a{
+            font-style: italic;
+            color: rgb(245, 37, 10);
         }
         /* main________________________________________ */
         main {
@@ -86,6 +99,7 @@ p strong {
 
         .carrosel{
             grid-area: carrosel;
+            margin-top: 110px;
         }
         .sobre{
             grid-area: sobre;

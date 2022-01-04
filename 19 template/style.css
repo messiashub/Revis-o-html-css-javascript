@@ -134,7 +134,7 @@ ul li::after{
     display: inline-block;
     width: 784px;
     margin-bottom: 20px;
-    background-color:#7EAE38
+    background-color:#59f96c;
 }
 .slider-title h1{
     display: flex;
@@ -173,10 +173,12 @@ ul li::after{
 .banner{
     background-color: #5EC26A;
    
+   
 }
 .banner-content{
     width: 1320px;
     margin: 0 auto; 
+
     height: 156px;
     display: flex;
     justify-content:space-between;
@@ -184,6 +186,13 @@ ul li::after{
 }
 .banner-text h2{
     margin-bottom: 4px;
+    color: #ffffff;
+    font-size: 35px;
+}
+.banner-text p{
+    font-family: Roboto;
+    font-size: 42px;
+    color: #7CFE8B; 
 }
 
 /* seccion___________ */
@@ -192,13 +201,67 @@ section{
 }
 .section-content{
     width: 1320px;
+    
     margin: 0 auto;
+    
     display: flex;
 }
 .col1, .col2, .col3{
     width: 428px;
+    margin-top: 40px;
 }
 
+.col-title h3{
+    font-size: 34px;
+    color: #ffffff;
+}
+.hr{
+    margin: 10px 0 20px 0;
+}
+hr{
+    margin:20px 0  20px 0;
+}
+.col1-text p{
+    font-size: 25px;
+    color: #31BB41;
+    margin-bottom: 7px;;
+}
+.col1-text p:last-of-type{
+    color:#7D7979;
+    font-size: 18px;
+    margin-bottom: 34px;
+}
+/* .col1-btn{
+    margin-bottom:20px
+} */
+
+.col2-container{
+    display: flex;
+}
+.calendar{
+    margin-right: 17px;
+}
+.col2-text{
+    width: 270px;
+    
+}
+.col2-text p{
+    font-size: 25px;
+    color: #ffffff;
+}
+.col2-text p:last-of-type{
+    font-size: 18px;
+}
+
+.col-container{
+    display: flex;
+    align-items: center;
+}
+.col-container>.icone{
+    margin-left: 0;
+    margin-right: 25px;
+
+}
 
 /* footer___________ */
 footer{

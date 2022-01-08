@@ -14,7 +14,7 @@
 .header1{
     display: flex;
     justify-content:space-between;
-    width: 1320px;
+    max-width: 1320px;
     align-items: center;
     height: 40px;
     margin: 0 auto;
@@ -44,7 +44,12 @@ header{
     justify-content:space-between;
     align-items: center;
 }
+#logo{
+    display: flex;
+}
 #logo p{
+    display: flex;
+
     font-family:Roboto;
     font-size: 45px;
     color: #ffffff;
@@ -176,7 +181,7 @@ ul li::after{
    
 }
 .banner-content{
-    width: 1320px;
+    max-width: 1320px;
     margin: 0 auto; 
 
     height: 156px;
@@ -208,12 +213,31 @@ section{
 }
 .col1, .col2, .col3{
     width: 428px;
+    margin-right: 20px;
     margin-top: 40px;
+}
+.col3{
+    margin-right: 0;
 }
 
 .col-title h3{
     font-size: 34px;
     color: #ffffff;
+}
+
+.col3 p{
+    font-family: Roboto;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.col3 p a{
+    font-family: 'Times New Roman', Times, serif;
+    color: #31BB41;
+}
+.col3 p:last-of-type{
+    font-family: 'Times New Roman', Times, serif;
+    color:#7D7979;
 }
 .hr{
     margin: 10px 0 20px 0;
@@ -269,7 +293,7 @@ footer{
     
 }
 .footer{
-    width: 1320px;
+    max-width: 1320px;
     height: 40px;
     margin: 0 auto;
     display: flex;

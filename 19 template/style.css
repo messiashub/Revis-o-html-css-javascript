@@ -6,6 +6,9 @@
     box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 255, 0.1);
     list-style: none;
 }
+body{
+    font-size: 16px;
+}
 
 /* header1____________ */
 .header1-content{
@@ -14,7 +17,7 @@
 .header1{
     display: flex;
     justify-content:space-between;
-    max-width: 1320px;
+    width:  68.75vw;
     align-items: center;
     height: 40px;
     margin: 0 auto;
@@ -32,13 +35,14 @@
 /* header___________________ */
 header{
     position: relative;
-    width: 1320px;
+    width: 100%;
     margin: 0 auto;
 }
 .header-content{
     display: flex;
     position: absolute;
-    width: 1320px;
+    width: 68.75vw;
+    margin: 0 15.62vw;
     height: 158px;
    /*  margin-left: 300px; */
     justify-content:space-between;
@@ -128,7 +132,7 @@ ul li::after{
    
    /*  margin-left: 500px; */
    width: 920px;
-   margin: 0 auto; 
+   margin: 0 26.04vw;
    margin-top: 268px;
 }
  .slider-title, .slider-text{
@@ -182,7 +186,7 @@ ul li::after{
 }
 .banner-content{
     max-width: 1320px;
-    margin: 0 auto; 
+    margin: 0 15.62vw;
 
     height: 156px;
     display: flex;
@@ -205,9 +209,9 @@ section{
     background-color: #393737;
 }
 .section-content{
-    width: 1320px;
+    width: 68.75vw;
     
-    margin: 0 auto;
+    margin: 0 15.625vw;
     
     display: flex;
 }
@@ -218,6 +222,9 @@ section{
 }
 .col3{
     margin-right: 0;
+}
+.col1-wrapper{
+    max-width: 428px;
 }
 
 .col-title h3{
@@ -245,10 +252,19 @@ section{
 hr{
     margin:20px 0  20px 0;
 }
+.col1-wrapper {
+    max-width: 22.29vw;
+}
 .col1-text p{
     font-size: 25px;
     color: #31BB41;
     margin-bottom: 7px;;
+}
+.col2-wrapper {
+    max-width: 22.29vw;
+}
+.col3-wrapper {
+    max-width: 22.29vw;
 }
 .col1-text p:last-of-type{
     color:#7D7979;
@@ -295,7 +311,7 @@ footer{
 .footer{
     max-width: 1320px;
     height: 40px;
-    margin: 0 auto;
+    margin: 0 15.625vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
